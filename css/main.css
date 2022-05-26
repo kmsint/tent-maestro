@@ -1,0 +1,289 @@
+*,
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "CenturyGothic", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #212121;
+    min-width: 320px;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 40px 0;
+}
+
+/* Header */
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.logo {
+    margin-top: 4px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.stroke-logo {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 17px;
+    width: 18px;
+    height: 5px;
+    background-color: white;
+    transform: rotate(-19deg);
+    transition: all 0.3s ease;
+}
+
+.logo__p {
+    font-family: "SalaraRegular", sans-serif;
+    padding-left: 10px;
+    color:rgb(255, 255, 255);
+    font-size: 36px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.logo:hover p {
+    color:rgb(220, 220, 220);
+}
+
+.logo:hover .stroke-logo {
+    background-color: rgb(220, 220, 220);
+}
+/* Header */
+
+/* Carousel */
+.main-carousel {
+    padding: 0;
+}
+
+.main-carousel .carousel-item {
+    display: flex;
+    max-height: 500px;
+    
+}
+
+.main-carousel .carousel-item img {
+    object-fit: cover;
+    position: relative;
+}
+
+.carousel-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+    z-index: 2;
+}
+
+.carousel-text h1 {
+    font-size: calc(2.5rem + 40 * (100vw - 320px) / 1080);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.buttons {
+    font-size: 26px;
+    text-align: center;
+}
+
+.main-carousel-buttons {
+    margin-top: 15%;
+}
+
+.main-carousel-button {
+    color: rgb(255, 255, 255);
+    width: 220px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid rgb(226, 226, 226);
+}
+/* Carousel */
+
+/* Main feature */
+.main-feature {
+    background-color: rgb(240, 240, 240);
+}
+
+.main-feature-text {
+    text-align: center;
+}
+
+.main-feature-text h2 {
+    padding-bottom: 10px;
+}
+/* Main feature */
+
+/* Advantages */
+.advantages-advantage {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.advantages-advantage-icon {
+    font-size: 36px;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid rgb(100, 100, 100);
+    color: rgb(100, 100, 100);
+}
+.advantages-advantage-name {
+    margin-top: 20px;
+}
+/* Advantages */
+
+/* Types */
+.types {
+    margin-top: -70px;
+    padding-bottom: 0;
+}
+
+.types-left, .types-right {
+    padding: 50px 0;
+}
+
+.types-left {
+    background-color: rgb(240, 240, 240);
+}
+
+.types-right {
+    background-color: white;
+}
+
+.types-card-photo-left img {
+    padding-right: 20px;
+}
+
+.types-card-description-left {
+    padding-left: 20px;
+}
+
+.types-card-description-left h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.types-card-decription-button {
+    margin-top: 10%;
+    color: rgb(100, 100, 100);
+    /* width: 220px; */
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.types-card-photo-right img {
+    padding-left: 20px;
+}
+
+.types-card-description-right h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Types */
+
+/* Tent-models */
+.tent-models__img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Tent-models */
+
+/* Order */
+.order {
+    background-color: rgb(202, 245, 251);
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.order-button {
+    color: rgb(100, 100, 100);
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid rgb(120, 120, 120);
+}
+/* Order */
+
+/* Footer */
+.footer {
+    background-color: rgb(120, 120, 120);
+    min-height: 230px;
+    color:rgb(255, 255, 255)
+}
+
+.footer__contacts {
+    margin-top: 40px;
+}
+
+.footer__contacts-text {
+    margin-top: 30px;
+}
+
+.footer__made-in-russia-sign {
+     margin-top: 50%; 
+}
+/* Footer */
+
+/* Fonts */
+@font-face {
+    font-family: "CenturyGothic";  
+    src: url("../fonts/CenturyGothic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CenturyGothic";  
+    src: url("../fonts/CenturyGothic-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "CenturyGothicBoldItalic";  
+    src: url("../fonts/CenturyGothic-BoldItalic.ttf") format("truetype"); 
+    font-style: italic; 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "CenturyGothicItalic";  
+    src: url("../fonts/CenturyGothic-Italic.ttf") format("truetype"); 
+    font-style: italic; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SalaraRegular";  
+    src: url("../fonts/Sarala-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+/* Fonts */
